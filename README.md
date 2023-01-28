@@ -1,3 +1,6 @@
+# Minimal-Portfolio-using-ReactJS
+Personal portfolio website using TailwindCSS and ReactJS [Minimal design]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
