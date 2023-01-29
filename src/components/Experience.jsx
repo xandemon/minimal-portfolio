@@ -3,8 +3,6 @@ import html from "../assets/experience/html.png";
 import css from "../assets/experience/css.png";
 import javascript from "../assets/experience/javascript.png";
 import reactImage from "../assets/experience/react.png";
-import nextjs from "../assets/experience/nextjs.png";
-import graphql from "../assets/experience/graphql.png";
 import github from "../assets/experience/github.png";
 import tailwind from "../assets/experience/tailwind.png";
 
