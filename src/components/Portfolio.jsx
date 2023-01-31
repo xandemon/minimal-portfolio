@@ -20,11 +20,11 @@ const Portfolio = () => {
     ];
   return (
     <div
-    name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-screen">
+    name="portfolio" className="flex items-center bg-gradient-to-b from-zinc-800 via-neutral-900 to-neutral-900 w-full text-white min-h-screen">
         <div
         className="max-w-screen-lg px-4 mx-auto flex flex-col justify-center w-full h-full">
             <div
-            className="pb-8">
+            className="pb-8 text-center">
                 <p
                 className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>
                 <p
