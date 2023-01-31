@@ -10,9 +10,9 @@ const menubar = document.getElementById('menubar');
 let prevScrollValue = window.scrollY;
 window.addEventListener("scroll", () => {
   if (prevScrollValue < window.scrollY) {
-    document.getElementById('menubar').classList.add('hideOnScroll');
+    menubar.classList.add('hideOnScroll');
   } else {
-    document.getElementById('menubar').classList.remove('hideOnScroll');
+    menubar.classList.remove('hideOnScroll');
   }
   prevScrollValue = window.scrollY;
 })
