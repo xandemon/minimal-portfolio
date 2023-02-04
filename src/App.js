@@ -5,8 +5,10 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import SocialLinks from "./components/SocialLinks";
+import NavBarScroll from "./utils/NavBarScroll";
 
 function App() {
+  window.onload = NavBarScroll;
   return (
     <div>
       <NavBar />
