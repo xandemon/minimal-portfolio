@@ -1,5 +1,5 @@
 import React from "react";
-import mainCharacter from "../assets/mainCharacter.png";
+import mainCharacter from "../assets/mainCharacter.webp";
 import { TiArrowRight } from "react-icons/ti";
 import { Link } from "react-scroll";
 
