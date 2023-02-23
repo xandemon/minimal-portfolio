@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import SocialLinks from "./components/SocialLinks";
 import NavBarScroll from "./utils/NavBarScroll";
+import Footer from "./components/Footer";
 
 function App() {
   window.onload = NavBarScroll;
@@ -18,6 +19,7 @@ function App() {
       <Techs />
       <Contact />
       <SocialLinks />
+      <Footer />
     </div>
   );
 }

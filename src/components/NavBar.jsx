@@ -13,7 +13,10 @@ const NavBar = () => {
   ];
 
   return (
-    <div id="menubar" className="flex justify-between items-center w-full h-20 px-4 text-white bg-neutral-900 bg-opacity-90 fixed z-20">
+    <div
+      id="menubar"
+      className="flex justify-between items-center w-full h-20 px-4 text-white bg-neutral-900 bg-opacity-90 fixed z-20"
+    >
       <div>
         <h1 className="text-4xl font-brand ml-2">Sandesh</h1>
       </div>
@@ -22,7 +25,7 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer font-medium capitalize text-gray-500 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer font-medium capitalize text-gray-300 hover:scale-105 duration-200"
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -45,7 +48,12 @@ const NavBar = () => {
               key={id}
               className="px-4 py-6 cursor-pointer capitalize text-4xl"
             >
-              <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
                 {link}
               </Link>
             </li>
