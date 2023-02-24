@@ -69,7 +69,7 @@ const Techs = () => {
           {techs.map(({ id, src, alt, style }) => (
             <div
               key={id}
-              className={`flex flex-col justify-center items-center shadow-lg hover:scale-110 duration-500 rounded-full w-20 h-20 md:w-28 md:h-28 m-3 md:m-5 ${style}`}
+              className={`flex flex-col justify-center items-center shadow-lg hover:scale-110 duration-300 rounded-full w-20 h-20 md:w-28 md:h-28 m-3 md:m-5 opacity-80 hover:opacity-100 ${style}`}
             >
               <img src={src} alt={alt} className="w-11 md:w-16 mx-auto" />
               {/* <p className="text-gray-400 mt-1">{title}</p> */}
