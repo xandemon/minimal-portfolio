@@ -18,7 +18,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-6xl text-white">Sandesh Katwal</h2>
           </div>
 
-          <div className="text-center md:text-left text-gray-400 py-[20px] max-w-md">
+          <div className="text-justify md:text-left text-gray-400 py-[20px] max-w-md">
             <p>
               a passionate Front-End Developer on a mission to build ideas to
               life in the form of user-friendly and visually appealing websites.
@@ -27,7 +27,7 @@ const Home = () => {
             </p>
           </div>
           <div className="flex justify-center md:justify-start">
-            <Link to="portfolio" smooth duration={300}>
+            <Link to="projects" smooth duration={300}>
               <button className="group text-white font-semibold flex items-center w-fit px-6 py-3 my-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:scale-105 duration-500">
                 Portfolio
                 <span className="group-hover:rotate-[360deg] duration-[500ms]">
