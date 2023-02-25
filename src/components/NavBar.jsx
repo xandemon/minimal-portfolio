@@ -18,7 +18,11 @@ const NavBar = () => {
       className="flex justify-between items-center w-full h-20 px-4 text-white bg-neutral-900 bg-opacity-90 fixed z-20"
     >
       <div>
-        <h1 className="text-4xl font-brand ml-2">Sandesh</h1>
+        <Link to={"home"} smooth duration={600}>
+          <h1 className="text-4xl font-brand pl-2 cursor-pointer text-transparent bg-gradient-to-br from-cyan-300 to-purple-700 bg-clip-text duration-300 hover:scale-110">
+            Sandesh
+          </h1>
+        </Link>
       </div>
 
       <ul className="hidden md:flex">
@@ -27,7 +31,7 @@ const NavBar = () => {
             key={id}
             className="px-4 cursor-pointer font-medium capitalize text-gray-300 hover:scale-105 duration-200"
           >
-            <Link to={link} smooth duration={500}>
+            <Link to={link} smooth duration={600}>
               {link}
             </Link>
           </li>

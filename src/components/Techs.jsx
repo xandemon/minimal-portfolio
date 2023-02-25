@@ -58,11 +58,14 @@ const Techs = () => {
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div className="text-center">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500 p-2">
-            Techs
+          <p className="text-4xl font-bold inline border-b-4 border-red-400 p-2">
+            TECHS
           </p>
           <p className="py-6 text-gray-500">
-            These are the technologies I use:
+            Below are some tools/technologies that I use very often.
+            <br />
+            (I wonder if I should include other skills like Photoshop, WordPress
+            too 🤔)
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center">
