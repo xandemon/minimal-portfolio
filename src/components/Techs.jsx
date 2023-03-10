@@ -5,6 +5,10 @@ import javascript from "../assets/experience/javascript.png";
 import reactImage from "../assets/experience/react.png";
 import github from "../assets/experience/github.png";
 import tailwind from "../assets/experience/tailwind.png";
+import typescript from "../assets/experience/typescript.png";
+import bootstrap from "../assets/experience/bootstrap.png";
+import figma from "../assets/experience/figma.png";
+import wordpress from "../assets/experience/wordpress.png";
 
 const Techs = () => {
   const techs = [
@@ -34,7 +38,7 @@ const Techs = () => {
       src: reactImage,
       alt: "React JS",
       title: "React",
-      style: "shadow-blue-500/20",
+      style: "shadow-blue-300/20",
     },
     {
       id: 5,
@@ -47,7 +51,35 @@ const Techs = () => {
       src: github,
       alt: "GitHub",
       title: "GitHub",
-      style: "shadow-gray-400/20",
+      style: "shadow-gray-100/20",
+    },
+    {
+      id: 7,
+      src: typescript,
+      alt: "TypeScript",
+      title: "TypeScript",
+      style: "shadow-blue-500/20",
+    },
+    {
+      id: 8,
+      src: bootstrap,
+      alt: "Bootstrap",
+      title: "Bootstrap",
+      style: "shadow-purple-600/20",
+    },
+    {
+      id: 9,
+      src: figma,
+      alt: "Figma",
+      title: "Figma",
+      style: "shadow-red-500/20",
+    },
+    {
+      id: 10,
+      src: wordpress,
+      alt: "WordPress",
+      title: "WordPress",
+      style: "shadow-blue-600/20",
     },
   ];
 
@@ -64,8 +96,7 @@ const Techs = () => {
           <p className="py-6 text-gray-500">
             Below are some tools/technologies that I use very often.
             <br />
-            (I wonder if I should include other skills like Photoshop, WordPress
-            too 🤔)
+            You might also want to hover or tap on these skills - just saying!
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center">
