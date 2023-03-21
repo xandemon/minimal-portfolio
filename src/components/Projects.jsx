@@ -3,6 +3,7 @@ import sandeshPortfolio from "../assets/portfolio/SandeshPortfolio.png";
 import modernDigitalClock from "../assets/portfolio/ModernDigitalClock.png";
 import modernAnalogClock from "../assets/portfolio/ModernAnalogClock.png";
 import mobileCalculator from "../assets/portfolio/MobileCalculator.png";
+import realtimeChatWebApp from "../assets/portfolio/RealtimeChatWebApp.png";
 import { VscGithub } from "react-icons/vsc";
 import { HiOutlineExternalLink } from "react-icons/hi";
 // import installNode from "../assets/portfolio/installNode.jpg";
@@ -47,6 +48,16 @@ const Projects = () => {
       link: "https://digitalclock-sandesh.netlify.app",
       github: "https://github.com/deadclown09/Dynamic-Digital-Clock",
       skills: ["HTML", "CSS", "Javascript"],
+    },
+    {
+      id: 5,
+      src: realtimeChatWebApp,
+      title: "Realtime Chat Web App",
+      descr:
+        "A web-based chat application with realtime data syncing in backend",
+      link: "https://github.com/deadclown09/Realtime-Chat-WebAppp",
+      github: "https://github.com/deadclown09/Realtime-Chat-WebAppp",
+      skills: ["React", "TypeScript", "SASS", "Firebase"],
     },
   ];
   return (
