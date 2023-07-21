@@ -4,6 +4,7 @@ import modernDigitalClock from "../assets/portfolio/ModernDigitalClock.png";
 import modernAnalogClock from "../assets/portfolio/ModernAnalogClock.png";
 import mobileCalculator from "../assets/portfolio/MobileCalculator.png";
 import realtimeChatWebApp from "../assets/portfolio/RealtimeChatWebApp.png";
+import acreativekind from "../assets/portfolio/ACreativeKind.png";
 import { VscGithub } from "react-icons/vsc";
 import { HiOutlineExternalLink } from "react-icons/hi";
 // import installNode from "../assets/portfolio/installNode.jpg";
@@ -59,6 +60,16 @@ const Projects = () => {
       github: "https://github.com/deadclown09/Realtime-Chat-WebAppp",
       skills: ["React", "TypeScript", "SASS", "Firebase"],
     },
+    {
+      id: 6,
+      src: acreativekind,
+      title: "A Creative Kind",
+      descr:
+        "A Next.js CRUD application to discover and share quotes with others",
+      link: "https://a-creative-kind.vercel.app",
+      github: "https://github.com/xandemon/A-Creative-Kind",
+      skills: ["Next 13", "MongoDB", "Tailwind", "NextAuth"],
+    },
   ];
   return (
     <div
@@ -80,50 +91,54 @@ const Projects = () => {
         <div>
           {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-7"> */}
           <div className="flex flex-wrap justify-center items-center gap-8">
-            {projects.map(({ id, src, title, descr, link, github, skills }) => (
-              <div
-                key={id}
-                className="flex flex-col rounded-md shadow-md hover:scale-[1.02] duration-300 bg-white bg-opacity-[0.03]  drop-shadow shadow-zinc-700 min-w-[280px] w-[30%] p-3"
-              >
-                <div className="group relative">
-                  <img
-                    src={src}
-                    alt=""
-                    className="rounded-md group-hover:blur-[2px]"
-                  />
-                  <span className="w-full h-full absolute top-0 right-0 p-2 flex flex-col gap-2 items-end rounded-md text-gray-100 bg-black bg-opacity-30  opacity-0 group-hover:opacity-100 duration-300">
-                    <a href={link} rel="noreferrer" target="_blank">
-                      <HiOutlineExternalLink
-                        size={30}
-                        className="cursor-pointer"
-                      />
-                    </a>
-                    <a href={github} rel="noreferrer" target="_blank">
-                      <VscGithub size={30} className="cursor-pointer" />
-                    </a>
-                  </span>
-                </div>
-                <div className="my-3">
-                  <a href={link} rel="noreferrer" target="_blank">
-                    <h3 className=" bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text text-base font-bold cursor-pointer hover:underline">
-                      {title}
-                    </h3>
-                  </a>
-                  <p className="text-sm text-gray-100">{descr}</p>
-                </div>
-                <div className="flex flex-row text-sm text-gray-100">
-                  {console.log(skills)}
-                  {skills.map((skill) => (
-                    <span
-                      key={id}
-                      className="px-2 py-0.5 mr-1.5 w-fit rounded-[4px] text-xs font-semibold text-black bg-blue-300"
-                    >
-                      {skill}
+            {projects?.map(
+              ({ id, src, title, descr, link, github, skills }) => (
+                <div
+                  key={id}
+                  className="flex flex-col rounded-md shadow-md hover:scale-[1.02] duration-300 bg-white bg-opacity-[0.03]  drop-shadow shadow-zinc-700 min-w-[280px] w-[30%] p-3"
+                >
+                  <div className="group relative">
+                    <img
+                      src={src}
+                      alt=""
+                      width={1280}
+                      height={720}
+                      className="rounded-md group-hover:blur-[2px]"
+                    />
+                    <span className="w-full h-full absolute top-0 right-0 p-2 flex flex-col gap-2 items-end rounded-md text-gray-100 bg-black bg-opacity-30  opacity-0 group-hover:opacity-100 duration-300">
+                      <a href={link} rel="noreferrer" target="_blank">
+                        <HiOutlineExternalLink
+                          size={30}
+                          className="cursor-pointer"
+                        />
+                      </a>
+                      <a href={github} rel="noreferrer" target="_blank">
+                        <VscGithub size={30} className="cursor-pointer" />
+                      </a>
                     </span>
-                  ))}
+                  </div>
+                  <div className="my-3">
+                    <a href={link} rel="noreferrer" target="_blank">
+                      <h3 className=" bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text text-base font-bold cursor-pointer hover:underline">
+                        {title}
+                      </h3>
+                    </a>
+                    <p className="text-sm text-gray-100">{descr}</p>
+                  </div>
+                  <div className="flex flex-row text-sm text-gray-100 overflow-hidden">
+                    {console.log(skills)}
+                    {skills?.map((skill) => (
+                      <span
+                        key={id}
+                        className="px-2 py-0.5 mr-1.5 w-fit rounded-[4px] text-xs font-semibold text-black bg-blue-300"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </div>

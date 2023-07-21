@@ -22,7 +22,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={25} />
         </>
       ),
-      href: "https://github.com/deadclown09",
+      href: "https://github.com/xandemon",
     },
     {
       id: 3,
